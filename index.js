@@ -14,7 +14,7 @@
         if (aNumber) {
             var isnum = /^\d+$/.test(aNumber);
             if (isnum && aNumber.length <= 8) {
-                var formatedURL = 'https://bugzilla.mozilla.org/show_bug.cgi?id=' + aNumber + '';
+                var formatedURL = 'https://bugzilla.redhat.com/show_bug.cgi?id=' + aNumber + '';
                 var { getMostRecentBrowserWindow } = require('sdk/window/utils');
                 var browser = getMostRecentBrowserWindow().gBrowser;
                 // Open formatedURL tab next to current tab.
